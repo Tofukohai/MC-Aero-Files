@@ -1,2 +1,2 @@
 # MC-Aero-Files
-(Files for use in Public Modpack)
+(Files for use in Priavte Modpack)
