@@ -1,0 +1,32 @@
+Fixed:
+- Changelog Button Positioning
+Added:
+(Server Note: Added Spark, removeing Freecam due to server issues)
+- Connectivity Mod by Someaddon
+- Cupboard mod by Someaddon
+- EMI Enchanting 
+- EMI Loot 
+- Fzzy Config
+- Gpu memory leak fix by Someaddon
+- Kotlin for Forge
+- PacketFixe
+- Platform 
+- Smoothchunk mod by Someaddon
+- Sodium Dynamic 
+- Sodium Extra 
+- Sodium Options API 
+- VanillaBackport
+- chunksending mod by Someaddon
+Updated:
+- Armor Poser [6.2.2]
+- CC: Tweaked [1.116.1]
+- Create [6.0.6]
+- Create: Central Kitchen [2.1.3]
+- Create: Copycats+ [3.0.2+mc.1.21.1-neoforge]
+- Create: Dragons Plus [1.6.1]
+- Create: Enchantment Industry [2.1.7]
+- Create: Pattern Schematics [2.0.9]
+- Iris [1.8.12-snapshot+mc1.21.1-local]
+- Jade [15.10.2+neoforge]
+- Just Enough Items [19.22.1.316]
+- Plasmo Voice [2.1.5]
