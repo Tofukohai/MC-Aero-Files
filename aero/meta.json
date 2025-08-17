@@ -35,6 +35,17 @@
         }
       }
     },
+     {
+      "id": "0.4.0",
+      "releasedAt": 1755302400,
+      "promotions": {
+        "downloads": {
+          "modrinth": "https://modrinth.com/project/Rus7W7Jm",
+          "curseforge": "https://modrinth.com/project/Rus7W7Jm",
+          "generic": "https://discord.gg/srgVxKAQGN/"
+        }
+      }
+    },
     }
   ]
 }
