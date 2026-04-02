@@ -1,3 +1,17 @@
-## 🐛 Fixes
+## 🔧 Fixes
 
-- Fixed "Failed to decode packet clientbound minecraft:command" crash on join — removed `connectivity` mod which conflicted with `Packet Fixer` (both patched the same NeoForge mixins, causing some packet size limit patches to be skipped; Packet Fixer alone now handles all packet size fixes)
+- Fixed proxy authentication (network connection issue resolved)
+- The Immersive Music Mod is now client-only (no longer loaded on server)
+
+## ✨ Added Mods
+
+- **Connectivity** [7.6]
+- **Cupboard** [3.5]
+
+## 🔄 Updated Mods
+
+_None_
+
+## ❌ Removed Mods
+
+- **Packet Fixer**
