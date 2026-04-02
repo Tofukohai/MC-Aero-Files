@@ -35,7 +35,7 @@
         }
       }
     },
-     {
+    {
       "id": "0.4.0",
       "releasedAt": 1755302400,
       "promotions": {
@@ -64,6 +64,17 @@
         "downloads": {
           "modrinth": "https://modrinth.com/project/Rus7W7Jm",
           "curseforge": "https://modrinth.com/project/Rus7W7Jm",
+          "generic": "https://discord.gg/srgVxKAQGN/"
+        }
+      }
+    },
+    {
+      "id": "0.7.0",
+      "releasedAt": 1775118354,
+      "promotions": {
+        "downloads": {
+          "modrinth": "https://modrinth.com/modpack/aero-tofu/version/0.7.0",
+          "curseforge": "https://modrinth.com/modpack/aero-tofu",
           "generic": "https://discord.gg/srgVxKAQGN/"
         }
       }
