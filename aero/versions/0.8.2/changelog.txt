@@ -1,0 +1,3 @@
+## 🐛 Fixes
+
+- Fixed client-server connection rejected due to Camera Mod, What Are They Up To (Watut), and The Immersive Music Mod (TIMM) having required server-side networking channels — reverted to `side = "both"`
