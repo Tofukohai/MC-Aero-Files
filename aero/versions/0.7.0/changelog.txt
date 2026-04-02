@@ -1,0 +1,11 @@
+## ✨ Added Mods
+
+_None_
+
+## 🔄 Updated Mods
+
+- **Create Railways Navigator**: 1.21.1-beta-0.8.5 → 1.21.1-alpha-0.9.0-C6+2
+
+## ❌ Removed Mods
+
+_None_
