@@ -1,0 +1,21 @@
+## ✨ Added Mods
+
+- **AmbientSounds** [6.3.3]
+- **BlueMap** [5.7-neoforge]
+- **Cloth Config API** [15.0.140+neoforge]
+- **Create: Bits 'n' Bobs** [0.0.44]
+- **CreativeCore** [2.13.36]
+- **DragonLib** [1.21.1-beta-3.0.24]
+- **Kiwi 🥝** [15.8.3+neoforge]
+- **Quark** [4.1-476]
+- **QuarkPonders** [1.4-1.21.1]
+- **The Immersive Music Mod** [1.1.0]
+- **Zeta** [1.1-39]
+
+## 🔄 Updated Mods
+
+_None_
+
+## ❌ Removed Mods
+
+_None_
