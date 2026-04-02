@@ -1,0 +1,3 @@
+## 🐛 Fixes
+
+- Fixed server crash caused by client-only mods incorrectly marked as server-compatible (ETF, EMF, Jade, JEI, EMI, FancyMenu and 17 others)
