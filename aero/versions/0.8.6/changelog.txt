@@ -1,0 +1,11 @@
+## ✨ Added Mods
+
+- **Scholar** [1.1.13]
+
+## 🔄 Updated Mods
+
+_None_
+
+## ❌ Removed Mods
+
+- **Fancy World Animations**
