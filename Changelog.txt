@@ -1,15 +1,6 @@
 ## ✨ Added Mods
 
-- **Chunks fade in** [v3.0.20-1.21-neoforge]
-- **Chunky** [1.4.23]
-- **Distant Horizons** [2.4.5-b-1.21.1]
-- **Fancy World Animations** [1.2.6]
-- **Field Guide** [1.6.9-1.21.1-neoforge]
-- **Immersive Overlays** [1.6.3+1.21.1-neoforge]
-- **Item Descriptions** [2.7.2+1.21.1-neoforge]
-- **KubeJS** [2101.7.2-build.348]
-- **Rhino** [2101.2.7-build.81+Rhino-1.21]
-- **Simple Voice Chat** [neoforge-1.21.1-2.6.16]
+- **Scholar** [1.1.13]
 
 ## 🔄 Updated Mods
 
@@ -17,9 +8,4 @@ _None_
 
 ## ❌ Removed Mods
 
-- **EMI**
-- **EMI Enchanting**
-- **EMI Loot**
-- **Plasmo Voice**
-- **pv-addon-groups**
-- **pv-addon-sculk**
+- **Fancy World Animations**
