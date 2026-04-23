@@ -1,0 +1,60 @@
+## ✨ Added Mods
+
+- **Amendments** [1.21-2.0.15-neoforge]
+- **Balm** [21.0.57+neoforge-1.21.1]
+- **Collective** [1.21.1-8.20-fabric+forge+neo]
+- **Copper Age Backport** [1.21.1-0.1.4]
+- **Create Aeronautics** [1.1.3+mc1.21.1]
+- **Create Slice & Dice** [4.2.4]
+- **Curios API** [9.5.1+1.21.1]
+- **EMI** [1.1.22+1.21.1+neoforge]
+- **EMI Enchanting** [0.1.2+1.21+neoforge]
+- **EMI Loot** [0.7.9+1.21+neoforge]
+- **Forgified Fabric API** [0.116.7+2.2.4+1.21.1]
+- **Inventory Essentials** [21.1.14+neoforge-1.21.1]
+- **Lithostitched** [1.7.0-neoforge-21.1]
+- **Moonlight Lib** [1.21-2.29.33-neoforge]
+- **Particle Rain** [v4-beta.9+1.21.1-neoforge]
+- **Paxi** [1.21.1-NeoForge-5.1.3]
+- **Polymorph** [1.1.0+1.21.1]
+- **Quick Right-Click** [1.21.1-1.6-fabric+forge+neo]
+- **Sable** [1.1.3+mc1.21.1]
+- **Shulker Box Tooltip** [5.1.9+1.21.1-neoforge]
+- **Simple Clouds** [0.7.3+1.21.1]
+- **Sinytra Connector** [2.0.0-beta.14+1.21.1]
+- **Sophisticated Backpacks** [1.21.1-3.25.41.1683]
+- **Sophisticated Core** [1.21.1-1.4.25.1696]
+- **Tectonic** [3.0.22-neoforge-21.1]
+- **Terralith** [2.5.8]
+- **vista** [1.21-3.1.2-neoforge]
+- **Vista - All The Cassettes** [1.2.0+neoforge.mc1.21.1]
+- **Voxy** [0.2.14]
+- **YUNG's API** [1.21.1-NeoForge-5.1.6]
+
+## 🔄 Updated Mods
+
+- **[EMF] Entity Model Features**: 3.0.17-neoforge-1.21 → 3.1.1-neoforge-1.21
+- **[ETF] Entity Texture Features**: 7.0.13-neoforge-1.21 → 7.1-neoforge-1.21
+- **Athena**: 4.0.3 → 4.0.4
+- **Concurrent Chunk Management Engine (NeoForge)**: 0.3.0+alpha.0.90+1.21.1 → 0.3.0+alpha.0.91+1.21.1
+- **Create**: mc1.21.1-6.0.9 → 6.0.10+mc1.21.1
+- **Create Deco**: 2.1.2 → 2.1.3
+- **Create: Dragons Plus**: 1.8.7 → 1.10.0b
+- **Create: Enchantment Industry**: 2.3.0 → 2.3.1
+- **Create: Hypertubes**: 0.4.0 → 0.4.0-COMPAT
+- **Farmer's Delight**: 1.21.1-1.2.11 → 1.21.1-1.2.11a
+- **ModernFix**: 5.27.2+mc1.21.1 → 5.27.3+mc1.21.1
+- **Photon Shaders**: v1.3a → v1.3b
+- **Proxy Compatible Forge**: 1.2.4 → 1.2.5
+
+## ❌ Removed Mods
+
+- **Camera Mod**
+- **Chunks fade in**
+- **Create: Central Kitchen**
+- **Distant Horizons**
+- **Field Guide**
+- **Quark**
+- **QuarkPonders**
+- **Scholar**
+- **Zeta**
