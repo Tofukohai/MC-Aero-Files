@@ -1,0 +1,21 @@
+## ✨ Added Mods
+
+_None_
+
+## 🛠 Pack Changes
+
+- Added a custom KubeJS **Simple Magnet** item with recipe, server logic, and client assets.
+
+## 🔄 Updated Mods
+
+_None_
+
+## ❌ Removed Mods
+
+- **Chipped**
+- **Fusion (Connected Textures)**
+- **Rechiseled**
+- **Rechiseled: Chipped**
+- **Rechiseled: Create**
+- **SuperMartijn642's Config Lib**
+- **SuperMartijn642's Core Lib**
