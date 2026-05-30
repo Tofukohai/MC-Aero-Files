@@ -1,8 +1,31 @@
-## 🚨 Hotfix
+## Aero Tofu 0.9.3
 
-- **0.9.1 is broken** and can fail during startup because the published **Freecam (Fair Play)** NeoForge jar is missing required mod metadata.
-- **0.9.2 removes Freecam (Fair Play)** to restore normal startup.
+### Added mods
+- Bits and Balance
+- Corpse (+ compat with Cosmetic Armor Reworked and Curios API)
+- Analog Audio
+- Create Aeronautics: Throwable Rope Connector
+- Create Diesel Generators (+ KubeJS integration)
+- Create Encased
+- Create Live Radio
+- Create More Parallel Pipes
+- Create Sable Dynamic Lights
+- Create Shuffle Filter
+- Create Stuff & Additions (+ Sable Aeronautics compat, tank fix)
+- Default Options
+- FreeCam
+- Iris FLW Compat
+- Jade Sable Compat
+- KubeJS Create
+- Sky Archipelago
+- Tree Physics
+- Wakes (reforged)
+- YACL
 
-## ❌ Removed Mods
+### Removed mods
+- Simple Clouds
+- Tectonic
+- Terralith
 
-- **Freecam (Fair Play)**
+### Updates
+- Many mods updated to latest versions
