@@ -1,0 +1,31 @@
+## Aero Tofu 0.9.3
+
+### Added mods
+- Bits and Balance
+- Corpse (+ compat with Cosmetic Armor Reworked and Curios API)
+- Analog Audio
+- Create Aeronautics: Throwable Rope Connector
+- Create Diesel Generators (+ KubeJS integration)
+- Create Encased
+- Create Live Radio
+- Create More Parallel Pipes
+- Create Sable Dynamic Lights
+- Create Shuffle Filter
+- Create Stuff & Additions (+ Sable Aeronautics compat, tank fix)
+- Default Options
+- FreeCam
+- Iris FLW Compat
+- Jade Sable Compat
+- KubeJS Create
+- Sky Archipelago
+- Tree Physics
+- Wakes (reforged)
+- YACL
+
+### Removed mods
+- Simple Clouds
+- Tectonic
+- Terralith
+
+### Updates
+- Many mods updated to latest versions
