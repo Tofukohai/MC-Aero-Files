@@ -1,0 +1,35 @@
+# 🍃 Aero Tofu 0.9.4
+
+A scenic little update — the **End Sea** finally pours into the Overworld (and looks right *with shaders this time*), the rails get grindier, and the menus get a fresh seasonal wardrobe.
+
+## ✨ Added Mods
+- **Create: Train Track Rail Grinding** `[1.1.2]` — grind, smooth, and reshape train tracks in place.
+- **Create: Hypertube** — re-added on a compatibility build now that the old NeoForge crash is sorted.
+- **End Sea Iris Fix** — small in-house mod that makes the End Sea play nice with shaders (details under 🔧 Fixes).
+
+## 🔄 Updated Mods
+- **Bits and Balance** → 2.2.10a
+- **Create: Big Cannons** → 5.11.5
+- **Create: Railways Navigator** → 0.9.1-C6
+- **Sky Archipelago** → 1.3.4
+- **Tree Physics** → 1.8
+- **DragonLib** → 3.0.28
+- **Puzzles Lib** → 21.1.51
+- **Be Quiet Negotiator** → 2.0.0
+- _The whole **Sodium suite** (Sodium, Sodium Extra, Sodium Dynamic Lights, Sodium Options API, Reese's Sodium Options) stays pinned at its current versions for compatibility — intentionally not updated._
+
+## 🌊 New Content
+- **The End Sea now floods the Overworld.** A deep, drifting abyss-sea wells up beneath the islands from `y = -64` downward — watch the drag as you sink.
+- **The End Sea renders under shaders.** Previously it simply vanished once you turned shaders on; now it's there in all its glow.
+
+## 🎨 Menus & UI
+- **Seven new FancyMenu themes:** Cherry Blossom 🌸, Cozy Campfire 🔥, Pumpkin Soup 🎃, Purple Void 🔮, Spooky Season 👻, plus **Light** & **Dark High-Contrast** themes for accessibility.
+- Fresh custom **pause-screen layout** and title-screen art.
+- A little loading-screen polish on the way in.
+
+## ⚖️ Balance & Cleanup
+- **Pulled three stray enchantments** out of enchanting tables, loot, and villager trades: **Chunk Eater**, **Above the Clouds**, and **Aerodynamic**.
+- **Sky Archipelago:** trimmed the oversized airship presets and retuned the balanced variant.
+
+## 🔧 Fixes
+- **End Sea + shaders:** built a dedicated compatibility mod so the sea is drawn *after* the shader pipeline composites the frame, instead of being erased by it. Works with Photon, Complementary, Solas, and friends — and stays out of the way entirely when shaders are off.
