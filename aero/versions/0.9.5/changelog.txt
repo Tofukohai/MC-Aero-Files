@@ -1,0 +1,24 @@
+## ✨ Added Mods
+
+- **The Roads More Travelled [TRMT]** [0.5.1]
+- **Mino++** [1.4.0]
+- **Create: Extra Gauges** [2.1.2]
+- **Create: Deployer API** [0.1.2] _(dependency of Extra Gauges)_
+
+## 🔧 Changes & Tweaks
+
+- **New renewable Create recipes** (via KubeJS) — turn common blocks into Create stones and renewable resources. A curated, balanced set: the overpowered options (renewable diamonds, netherite, wither skulls, heart of the sea, etc.) are intentionally left out. Asurine now uses clay, so it's infinitely craftable.
+- **Elytra rebalance** — gliding now bleeds horizontal speed quickly, so you can't cruise across the map by hovering. Still great for bailing off an island, crossing a gap, or an emergency descent. Airships and trains stay the real long-distance travel.
+- **Default keybinds** — the pack now ships with a sensible keybind layout out of the box.
+
+## 🐛 Fixes
+
+- **Tree Physics** — fixed being able to walk straight through world leaves (a renamed config option had silently re-enabled it). World leaves are solid again; physics still applies to felled trees.
+
+## 🔄 Updated Mods
+
+_None_
+
+## ❌ Removed Mods
+
+_None_
