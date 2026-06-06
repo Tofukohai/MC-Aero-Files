@@ -1,0 +1,20 @@
+## ✨ Added Mods
+
+- **Create: Hypertubes** [0.4.0-SABLE-COMPAT] — now Modrinth-managed (was a manually-bundled jar) so it auto-updates again, on the Sable-compatible build
+- **Sable Beyond** [0.4.0]
+
+## 🔧 Changes & Tweaks
+
+- **Sky Archipelago — tuned world preset** — the pack now ships a curated island preset: SPECIFIC size bands (more small/large variety), wider cluster spacing, and **ocean generation disabled** so islands generate cleanly. New servers/worlds use the `sky_archipelago:sky_islands` world type by default.
+
+## 🐛 Fixes
+
+- **Multiplayer connection fixes** — corrected the client/server sides for **BaguetteLib**, **Quick Right-Click**, and **Corpse × Curios Compat**. These were server-only and caused "Incompatible client" disconnects when joining; they're now installed on both sides.
+
+## 🔄 Updated Mods
+
+_None_
+
+## ❌ Removed Mods
+
+_None_
