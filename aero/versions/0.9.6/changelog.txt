@@ -1,0 +1,31 @@
+## ✨ Added Mods
+
+- **AeroTofu** [1.0.0] — custom mod for the pack
+- **Burnt Basic** [1.10.3.7]
+- **Dynamic FPS** [3.11.4]
+- **Sable: Player Ragdoll** [0.4.3]
+
+## 🔧 Changes & Tweaks
+
+- **Shaders no longer forced on** — the pack no longer enables Iris shaders by default at startup. Photon is still bundled and selected, so you can switch it on whenever you like (Video Settings → Shader Packs) without a performance hit out of the box.
+- **Keybind fix** — resolved an H-key conflict: "Hide Icons" is now unbound by default so H is free for Sable: Player Ragdoll.
+
+## 🔄 Updated Mods
+
+- **Bits and Balance**: 2.2.10a → 2.2.10d
+- **Collective**: 1.21.1-8.22-fabric+forge+neo → 1.21.1-8.23-fabric+forge+neo
+- **Create: Diesel Generators**: 1.21.1-1.3.12 → 1.21.1-1.3.13
+- **Create: Dragons Plus**: 1.10.1 → 1.11.1b
+- **Create: Enchantment Industry**: 2.3.1 → 2.4.1
+- **CreativeCore**: 2.13.40 → 2.13.41
+- **Immersive Overlays**: 1.7.0+1.21.1-neoforge → 1.7.2+1.21.1-neoforge
+- **Jade Sable Compat**: 1.1.0 → 1.1.1
+- **Sophisticated Backpacks**: 1.21.1-3.25.49.1791 → 1.21.1-3.25.53.1822
+- **Sophisticated Core**: 1.21.1-1.4.42.1892 → 1.21.1-1.4.46.1946
+- **Tree Physics**: 1.8 → neoforge-2.0
+- **Vanilla Backport**: 1.1.7.6 → 1.1.7.7
+- **vista**: 1.21.1-4.4.9 → 1.21.1-4.4.11
+
+## ❌ Removed Mods
+
+_None_
