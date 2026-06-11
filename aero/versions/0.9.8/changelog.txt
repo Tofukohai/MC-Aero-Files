@@ -1,0 +1,28 @@
+## ✨ Added Mods
+
+- **Create: Cardboarded Conveynience** [1.0.0] — cardboard-themed Create convenience blocks & utilities
+- **Dashpanels** [0.4] — placeable dash/boost panels for launching players and contraptions
+- **Ragdoll Reactions** [0.6.0] — companion to Sable: Player Ragdoll, adding reactive ragdoll behaviour
+
+## 🔄 Updated Mods
+
+- **Bits and Balance**: 2.2.10d → 2.2.12
+- **CC:C Bridge**: 1.7.2 → 1.7.3
+- **Collective**: 8.23 → 8.25
+- **Create Big Cannons**: 5.11.5 → 5.11.6
+- **Create: Dragons Plus**: 1.11.1b → 1.11.2b
+- **ModernFix**: 5.27.11 → 5.27.12
+- **Moonlight Lib**: 3.0.14 → 3.0.17
+- **Quick Right-Click**: 1.6 → 1.9
+- **Rhino**: build.81 → build.85
+- **Sable Beyond**: 0.4.0 → 0.4.1
+- **Sable: Player Ragdoll**: 0.4.3 → 0.6.0
+- **Sophisticated Backpacks**: 3.25.53.1822 → 3.25.57.1871
+- **Sophisticated Core**: 1.4.46.1946 → 1.4.53.2003
+- **Vanilla Backport**: 1.1.7.7 → 1.1.7.10
+- **Xaero's Minimap**: 25.3.13 → 26.1.0
+- **Xaero's World Map**: 1.40.16 → 1.41.0
+
+## ❌ Removed Mods
+
+- **The Immersive Music Mod**
