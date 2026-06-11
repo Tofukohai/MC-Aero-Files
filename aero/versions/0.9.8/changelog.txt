@@ -1,7 +1,7 @@
 ## ✨ Added Mods
-
-- **Create: Cardboarded Conveynience** [1.0.0] — cardboard-themed Create convenience blocks & utilities
-- **Dashpanels** [0.4] — placeable dash/boost panels for launching players and contraptions
+> hi dani 👋
+- **Create: Cardboarded Conveynience** [1.0.0] — cardboard-themed Create convenience
+- **Dashpanels** [0.4] — placeable dashpanels
 - **Ragdoll Reactions** [0.6.0] — companion to Sable: Player Ragdoll, adding reactive ragdoll behaviour
 
 ## 🔄 Updated Mods
