@@ -1,0 +1,25 @@
+A small maintenance release: the dedicated server crash from 0.9.9 is fixed, and 22 mods were updated.
+
+## 🐛 Server Crash Fix
+
+The server failed to boot on 0.9.9 — **DashPanels Extra** tried to load a client-only screen class
+during mod construction, which aborts loading on a dedicated server. The mod has been removed for now;
+it will come back once its upstream version works with the current Dashpanels release.
+
+## 🔄 Updated Mods
+
+Dashpanels, JEI, Jade, CC: Tweaked, Chat Heads, Lootr, Sophisticated Backpacks + Core, Simple Voice
+Chat, Sound Physics: Aeronautics, Vista, Moonlight Lib, CreativeCore, SuperMartijn642's Core Lib,
+More Culling, AsyncParticles, Wakes Reforged, Contraption Lights, Bits and Balance, and the Create
+addons (Dragons Plus, Enchantment Industry, Shuffle Filter, Coasters Simulated).
+
+## ➖ Removed Mods
+
+- **DashPanels Extra** — caused the server crash (see above); temporary
+- **Cerulean** — never actually loaded on either side, so it did nothing
+- **Grassier Grass** — cosmetic grass tufts; trimmed, client-side only if you want it back
+- **Mino++** — card game minigame; trimmed
+
+## 📝 Notes
+
+Shaders and the Sodium/Iris render stack are unchanged from 0.9.9.
