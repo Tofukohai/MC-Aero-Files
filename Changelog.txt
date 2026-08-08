@@ -1,154 +1,25 @@
-A big one — the render stack got rebuilt around Sodium 0.8 / Sable 2.0, shaders are back, and the
-distant-terrain LOD system returned. On top of that, 51 mods were updated and two long-standing
-startup/rendering bugs were fixed with custom builds.
+A small maintenance release: the dedicated server crash from 0.9.9 is fixed, and 22 mods were updated.
 
-## ⚙️ Platform
+## 🐛 Server Crash Fix
 
-- **NeoForge**: 21.1.219 → **21.1.248** (required by JEI 19.43+, which needs ≥ 21.1.238)
-- Minecraft stays on 1.21.1
-
-## 🔧 Custom Patch Builds
-
-Two mods ship as locally-patched jars because the upstream releases are broken and the fixes
-aren't merged yet. Both are still fully in the pack — they just no longer auto-update.
-
-- **Copper Age Backport** [0.1.4-aeropatch] — upstream 0.1.4 crashes on startup. It re-registers
-  `minecraft:armor_material/copper` on every access, which aborts NeoForge's item registration
-  mid-dispatch and takes unrelated mods down with it (My Nether's Delight, Create Aeronautics, and
-  a misleading "Sodium config not found" crash were all collateral). Patched to register once.
-  Upstream issues #101/#107 are open; fix PRs #106/#108 are unmerged.
-- **Voxy** [0.2.15-beta-aero] — fixes transparent diagonal seams that appeared on the south face of
-  distant grass blocks. Voxy bakes each block face with a software rasterizer that splits the quad
-  into two triangles; pixels landing exactly on the shared diagonal were rejected by both halves and
-  left fully transparent. South was the only face affected because it's the one bake angle with no
-  rotation applied, so its maths lands on exact zeros instead of being nudged off by rounding.
-
-## ✨ Added Mods
-
-- **Iris Shaders** [1.8.14-beta.1] — shaders are back, running on the pinned Sodium 0.8 stack
-- **Bliss Shaders** [2.1.2] — bundled shaderpack
-- **Colorwheel** [1.2.9] + **Colorwheel Patcher** [1.0.5] — shader colour-grading
-- **Grassier Grass** [1.4.5] — animated per-blade grass (ships in segmented style)
-- **ATMOSPHERICS** [2.6.5.1] — per-biome fog, sky, clouds and haze
-- **LambDynamicLights** [4.8.10] — dynamic lighting
-- **Create: Coasters Simulated** [0.1]
-- **Create Propulsion: Simulated** [1.1.5]
-- **Create: Avionics — ComputerCraft for Aeronautics** [0.5.2]
-- **Create: Pipes'n physics** [3.0.1]
-- **Create: Sound of Steam** [0.8.2]
-- **Create Smart Bounds** [1.0.0]
-- **Create BlueMap** [1.1.1]
-- **Create - Xaero's map** [1.0.34]
-- **Steam 'n' Rails** [0.3.0-beta.2]
-- **VS / Sable Hose Connectors** [0.1.8]
-- **Separate Sable Render Distance** [1.8.5]
-- **Sable CleanUp** [0.3.0]
-- **Simulated Diagram Snapshots** [1.0.3]
-- **Glaiden's Audio** [1.3.8] + **Aeronautics compat** [1.0.0]
-- **Armor Poser** [6.2.4]
-- **My Nether's Delight** [1.10.4]
-- **Lootr** [1.21.1-1.11.37.122]
-- **Smooth Swapping** [0.9.3.2]
-- **Strut Your Stuff** [1.3.0]
-- **Explosive Enhancement: Reforged** [1.1.2]
-- **Dashpanels: Extra** [1.3.1]
-- **Contraption Lights** [1.3.0]
-- **MmmMmmMmmMmm** [2.1.0]
-- **Simple Discord RPC** [4.1.4]
-- **Companion 🐕** [6.2.2]
-- **Cerulean** [1.1.5]
-- **Kerria** [1.3.2]
-- **Sound Physics: Aeronautics** [1.2.1]
-- Performance: **BadOptimizations** [2.4.1], **More Culling** [1.0.8], **Ixeris** [4.6.2],
-  **Async Logger** [2.2.1], **AsyncParticles** [21.1.3.1], **Flerovium** [1.1.2],
-  **Structure Layout Optimizer** [1.0.12], **Better Biome Reblend** [1.5.2]
-- Libraries: **Azimuth API** [1.4.3], **CraterLib** [1.21-3.1.2], **Resourceful Config** [3.0.11]
+The server failed to boot on 0.9.9 — **DashPanels Extra** tried to load a client-only screen class
+during mod construction, which aborts loading on a dedicated server. The mod has been removed for now;
+it will come back once its upstream version works with the current Dashpanels release.
 
 ## 🔄 Updated Mods
 
-Render stack:
-- **Sodium**: 0.6.13 → 0.8.12-alpha.4 (pinned; the 0.8 line is required by Sable 2.0)
-- **Sodium Extra**: 0.6.0 → 0.8.7
-- **Reese's Sodium Options**: 1.8.3 → 2.0.5
-- **Sable**: 1.2.2 → 2.0.3
-- **Sable Beyond**: 0.4.1 → 0.5.0
-- **Sable: Player Ragdoll**: 0.6.0 → 0.7.5
-- **Create Aeronautics**: 1.2.1 → 1.3.0
+Dashpanels, JEI, Jade, CC: Tweaked, Chat Heads, Lootr, Sophisticated Backpacks + Core, Simple Voice
+Chat, Sound Physics: Aeronautics, Vista, Moonlight Lib, CreativeCore, SuperMartijn642's Core Lib,
+More Culling, AsyncParticles, Wakes Reforged, Contraption Lights, Bits and Balance, and the Create
+addons (Dragons Plus, Enchantment Industry, Shuffle Filter, Coasters Simulated).
 
-Everything else:
-- **Amendments**: 2.0.15 → 2.1.7
-- **Architectury API**: 13.0.8 → 13.0.11
-- **Balm**: 21.0.58 → 21.0.64
-- **Bits and Balance**: 2.2.12 → 2.2.17
-- **Carry On**: 2.2.4 → 2.2.6
-- **CC: Tweaked**: 1.119.0 → 1.120.0
-- **Chat Heads**: 0.15.1 → 0.15.3
-- **Collective**: 8.25 → 8.39
-- **Concurrent Chunk Management Engine**: 0.3.0-alpha.0.93 → 0.4.0-alpha.0.116
-- **Create Aeronautics: Throwable Rope Connector**: 0.3.0 → 0.4.1
-- **Create Big Cannons**: 5.11.6 → 5.11.7
-- **Create Encased**: 1.8.1-ht1 → 1.9.0-ht3
-- **Create Slice & Dice**: 4.2.4 → 4.3.3
-- **Create Stuff 'N Additions**: 2.1.3 → 2.1.4a
-- **Create: Aquatic Ambitions**: 2.0.2 → 2.0.4
-- **Create: Bits 'n' Bobs**: 0.0.44 → 2.1.15-beta
-- **Create: Blueprinted**: 1.0.1 → 2.0
-- **Create: Diesel Generators**: 1.3.13 → 1.3.15
-- **Create: Dragons Plus**: 1.11.2b → 1.11.3
-- **Create: Enchantment Industry**: 2.4.1 → 2.5.0 (out of preview)
-- **Create: Hypertubes**: 0.4.0 → 0.6.0
-- **Create: Shuffle Filter**: 2.1.0 → 2.1.1
-- **Create: Train Track Rail Grinding**: 1.1.2 → 1.2.2
-- **Dashpanels**: 0.4 → 1.6
-- **Default Options**: 21.1.6 → 21.1.8
-- **Drippy Loading Screen**: 3.1.2 → 3.1.5
-- **Entity Culling**: 1.10.2 → 1.10.5
-- **FancyMenu**: 3.9.1 → 3.9.9
-- **ImmediatelyFast**: 1.6.10 → 1.6.11
-- **Immersive Overlays**: 1.7.2 → 1.7.3
-- **Inventory Essentials**: 21.1.15 → 21.1.17
-- **Item Descriptions**: → 2.8.0
-- **Jade Sable Compat**: 1.1.1 → 1.2.1
-- **Just Enough Items (JEI)**: 19.27.0.340 → 19.43.0.391
-- **Kiwi 🥝**: 15.8.4 → 15.8.7
-- **Kotlin for Forge**: 5.11.0 → 5.12.0
-- **KubeJS Diesel Generators**: 1.1.5 → 1.2.3
-- **Lithium**: 0.15.3 → 0.15.4
-- **Lithostitched**: 1.7.9 → 1.7.13
-- **ModernFix**: 5.27.12 → 5.27.20
-- **Moonlight Lib**: 3.0.17 → 3.3.0
-- **Proxy Compatible Forge**: 1.2.6 → 1.3.0
-- **Puzzles Lib**: 21.1.51 → 21.1.52
-- **Ragdoll Reactions**: 0.6.0 → 0.7.0
-- **Rhino**: 2101.2.7-build.85 → 2101.2.8-build.91
-- **Simple Voice Chat**: 2.6.18 → 2.6.21
-- **Sophisticated Backpacks**: 3.25.57 → 3.25.73
-- **Sophisticated Core**: 1.4.53 → 1.4.80
-- **SuperMartijn642's Core Lib**: 1.1.21 → 1.1.22
-- **Tree Physics**: 2.0 → 2.3
-- **vista**: 4.4.11 → 5.2.5
-- **Xaero's Minimap**: 26.1.0 → 26.4.2
-- **Xaero's World Map**: 1.41.0 → 1.44.2
-- **Aero Tofu** (in-house): 1.0.0 → 1.1.0
+## ➖ Removed Mods
 
-## ❌ Removed Mods
+- **DashPanels Extra** — caused the server crash (see above); temporary
+- **Cerulean** — never actually loaded on either side, so it did nothing
+- **Grassier Grass** — cosmetic grass tufts; trimmed, client-side only if you want it back
+- **Mino++** — card game minigame; trimmed
 
-- **What Are They Up To (Watut)** — crashed on startup with Iris installed; its blur shader can't
-  resolve a vanilla shader file. Unfixed upstream and no newer NeoForge build exists.
-- **Sodium Dynamic Lights** — superseded by LambDynamicLights on the Sodium 0.8 stack
-- **Sodium Options API** — folded into Reese's Sodium Options 2.0
-- **Create Sable Dynamic Lights** — incompatible with the new render stack
-- **Iris & Oculus Flywheel Compat** — not compatible with the current Iris/Flywheel builds
-- **Analog Audio**, **Create Live Radio** — replaced by Glaiden's Audio
-- **Solas Shader** — dropped, no Colorwheel patch available
-- **End Sea Iris Fix** (in-house) — the fix stopped working against current Iris and was retired
-- **Sable Xaero Bridge** — superseded by Create - Xaero's map
+## 📝 Notes
 
-## 🎛️ Config & Defaults
-
-- **Sky Archipelago**: island overlap mode changed from `VOID` to `CRATER` — removes the harsh
-  jagged edges where two islands intersect
-- **Grassier Grass**: now ships a pack default with the segmented (vanilla-like) blade style
-- Shaderpacks are pinned to Colorwheel-patchable builds, so **Photon** (1.3b → 1.3a) and
-  **Complementary Reimagined** (r5.8.1 → r5.6.1) intentionally read as downgrades — they are the
-  newest versions Colorwheel can currently patch.
+Shaders and the Sodium/Iris render stack are unchanged from 0.9.9.
