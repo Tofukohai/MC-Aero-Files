@@ -1,31 +1,31 @@
-Infrastructure release: the server no longer sits behind a proxy. Aero Tofu now connects straight to
-the game server on its own ports, so everything that only existed to support the proxy layer is gone.
-
-## 🌐 Networking Overhaul — Direct Connect
-
-The Velocity/BungeeCord-style proxy in front of the server has been retired. Clients connect directly
-to the forwarded Minecraft port, and the backup/limbo server is gone with it.
+Small cleanup release on top of 0.9.9b — one buggy mod out, live map improvement in, and the server
+list entry gets a proper MOTD.
 
 ## ➖ Removed Mods
 
-- **Proxy Compatible Forge** — handled player-info forwarding and command-argument wrapping for the
-  proxy. With no proxy in the path it has nothing left to do.
+- **Sound Physics: Aeronautics** — pulled for being highly buggy. Sound occlusion/reverb stays gone
+  until a stable build lands; ambient audio (AmbientSounds, Glaidens Audio, Create: Sound of Steam)
+  is unaffected.
 
-## 🧹 Removed Configs
+## 🗺️ Live Map — Train Tracks
 
-- `config/proxy-compatible-forge.toml` — forwarding mode + shared proxy secret
-- `config/pcf-common.toml` — modern-forwarding secret + wrapped-argument list
+`config/create_bluemap-server.toml` now ships the live server config with **track rendering enabled**:
+
+- `renderTracks = true` — Create: Steam 'n' Rails track network is drawn on the BlueMap web map
+- `renderCarriages` / `renderTrains` stay on
+- The file also drops the stale `[general]` table header the pack shipped before — the mod writes
+  these keys at top level, so the old file was being ignored and regenerated
 
 ## ⚙️ Server Settings
 
-`server.properties` now ships direct-connect defaults:
+`server.properties` gains a MOTD — the server now shows up as **Aero Server** in the multiplayer
+list instead of the default line:
 
-- `online-mode=true` — the server authenticates players itself again (the proxy used to do this)
-- `network-compression-threshold=256` — back to the vanilla default; proxy backends run this at `-1`
+```
+motd=§bAero Server
+```
 
 ## 📝 Notes
 
-No mod updates in this release — 0.9.9b is purely the networking cleanup on top of 0.9.9a.
-
-Side effect: the Atmosphere crash when hopping onto a proxy backend that lacked the pack's mods can no
-longer happen, since there are no other backends to land on.
+No mod updates in this release. The server icon (`server-icon.png`) is managed on the server itself
+and is not shipped in the pack, so deploying this release leaves it untouched.
