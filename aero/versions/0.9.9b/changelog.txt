@@ -1,0 +1,31 @@
+Infrastructure release: the server no longer sits behind a proxy. Aero Tofu now connects straight to
+the game server on its own ports, so everything that only existed to support the proxy layer is gone.
+
+## 🌐 Networking Overhaul — Direct Connect
+
+The Velocity/BungeeCord-style proxy in front of the server has been retired. Clients connect directly
+to the forwarded Minecraft port, and the backup/limbo server is gone with it.
+
+## ➖ Removed Mods
+
+- **Proxy Compatible Forge** — handled player-info forwarding and command-argument wrapping for the
+  proxy. With no proxy in the path it has nothing left to do.
+
+## 🧹 Removed Configs
+
+- `config/proxy-compatible-forge.toml` — forwarding mode + shared proxy secret
+- `config/pcf-common.toml` — modern-forwarding secret + wrapped-argument list
+
+## ⚙️ Server Settings
+
+`server.properties` now ships direct-connect defaults:
+
+- `online-mode=true` — the server authenticates players itself again (the proxy used to do this)
+- `network-compression-threshold=256` — back to the vanilla default; proxy backends run this at `-1`
+
+## 📝 Notes
+
+No mod updates in this release — 0.9.9b is purely the networking cleanup on top of 0.9.9a.
+
+Side effect: the Atmosphere crash when hopping onto a proxy backend that lacked the pack's mods can no
+longer happen, since there are no other backends to land on.
