@@ -306,6 +306,16 @@
           "generic": "https://discord.gg/srgVxKAQGN/"
         }
       }
+    },
+    {
+      "id": "0.9.9c",
+      "releasedAt": 1786269606,
+      "promotions": {
+        "downloads": {
+          "github": "https://github.com/Tofukohai/MC-Aero-Files/releases/download/v0.9.9c/Aero.Tofu-0.9.9c.mrpack",
+          "generic": "https://discord.gg/srgVxKAQGN/"
+        }
+      }
     }
   ]
 }
