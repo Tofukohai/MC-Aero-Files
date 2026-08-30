@@ -1,0 +1,48 @@
+Small release on top of 0.9.9d — mostly server and config work laying the groundwork for the
+Discord bot. No mod additions, removals or updates.
+
+## ✨ Added Mods
+
+_None_
+
+## 🔧 Changes & Tweaks
+
+- **Aero Tofu (pack mod) rebuilt** — adds the outbound **Discord bridge**: chat, joins/leaves, deaths
+  and advancements are POSTed to the bot as small JSON payloads, with all formatting handled bot-side.
+  Registered **only on a dedicated server**, disabled by default and shipping no endpoint, so
+  singleplayer never loads it and nothing is sent until the server is configured.
+- **Spawn protection disabled** — `server.properties` now sets `spawn-protection=0`. Sky Archipelago
+  drops you on a small starter island, and the vanilla default of 16 made that whole island
+  unbuildable for non-ops.
+- **Andesite Jetpack nerfed** — speed `0.08` → `0.04`, so it no longer matches the Netherite jetpack.
+- **Sophisticated Backpacks upgrades purged** — stack upgrades (all tiers + conversions), XP Pump,
+  Mob Catcher, Advanced Mob Catcher, Battery and Inception upgrades are now disabled pack-wide.
+  Replaces the old catch-all regex with an explicit list, so nothing else gets swept up by accident.
+- **Sky retune** — Cirrus cloud decks moved to y 182 / 272 / 336, lower and upper layers switched to
+  `fancy`, and the fog tint now leans on Atmospherics instead of Cirrus's horizon gradient.
+
+## 🐛 Fixes
+
+- **Totems of Undying work again** — the death-ragdoll flow intercepted the fatal blow before vanilla
+  ever ran its totem check, so totems silently did nothing. A totem now keeps you on your feet at
+  1 heart instead of putting you down.
+- **Absorption hearts are counted** — golden-apple hearts were ignored when deciding a hit was fatal,
+  downing (and wasting a totem on) players who would have survived.
+- **Revive hints** — nearby players now get an action-bar prompt naming who is down, and how to get
+  them up with a splash of Healing.
+- **Fire charges hit airships** — Amendments' fire charge flew straight through Sable ship hulls.
+- **The sky no longer turns white in the rain** — Atmospherics' rain/thunder colours are absolute
+  replacements, not tints, and shipped as pure white. Replaced with proper overcast greys.
+- **Rain falls below the clouds again** — Particle Rain's spawn height limit was silently reset to the
+  mod's default by a config-version migration, so rain spawned above the cloud decks. Re-pinned to the
+  lower deck at y 182, which matters constantly here since airships cruise above cloud level.
+- **Savanna pig texture fixed** — Fresh Animations ships the warm pig at the wrong size for 1.21.1,
+  scrambling it. A small Paxi resource pack now supplies a correctly-sized texture.
+
+## 🔄 Updated Mods
+
+_None_
+
+## ❌ Removed Mods
+
+_None_
