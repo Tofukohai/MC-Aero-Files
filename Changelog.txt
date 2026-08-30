@@ -1,99 +1,48 @@
-**Pre-release.** Feature-complete candidate for 1.0.0: quest book, new sky/render stack, and a full
-update pass across the pack. Shipping this to shake out issues before the 1.0.0 cut — the only
-outstanding item is Sky Archipelago, everything else is expected to carry forward as-is.
+Small release on top of 0.9.9d — mostly server and config work laying the groundwork for the
+Discord bot. No mod additions, removals or updates.
 
-## ➕ Added (17)
+## ✨ Added Mods
 
-| Mod | Version | Side |
-|---|---|---|
-| FTB Quests | `2101.1.34` | both |
-| FTB Library | `2101.1.35` | both |
-| FTB Teams | `2101.1.11` | both |
-| Fancy Toasts \| Better Advancements | `1.5.1` | client |
-| Cirrus | `1.3.0` | client |
-| Exposure | `1.9.18` | both |
-| Create: Hangars (Aeronautics) | `1.0.0` | both |
-| Create: Stam1o Tweaks | `1.0.8` | both |
-| Amplified Nether | `1.2.16` | both |
-| Amplified Nether Height | `1.2` | both |
-| Patchouli | `1.21.1-93` | both |
-| Almanac | `1.5.2` | both |
-| Barehanded | `1.6.6` | both |
-| Spice of Life: Onion | `1.5.6` | both |
-| Emojiful | `5.2.4` | both |
-| AI Improvements | `0.5.3` | both |
-| Let Me Despawn | `1.5.0` | both |
+_None_
 
-Plus **Aero Tofu** (pack mod) `1.1.0` → `1.2.0`.
+## 🔧 Changes & Tweaks
 
-## ➖ Removed (6)
+- **Aero Tofu (pack mod) rebuilt** — adds the outbound **Discord bridge**: chat, joins/leaves, deaths
+  and advancements are POSTed to the bot as small JSON payloads, with all formatting handled bot-side.
+  Registered **only on a dedicated server**, disabled by default and shipping no endpoint, so
+  singleplayer never loads it and nothing is sent until the server is configured.
+- **Spawn protection disabled** — `server.properties` now sets `spawn-protection=0`. Sky Archipelago
+  drops you on a small starter island, and the vanilla default of 16 made that whole island
+  unbuildable for non-ops.
+- **Andesite Jetpack nerfed** — speed `0.08` → `0.04`, so it no longer matches the Netherite jetpack.
+- **Sophisticated Backpacks upgrades purged** — stack upgrades (all tiers + conversions), XP Pump,
+  Mob Catcher, Advanced Mob Catcher, Battery and Inception upgrades are now disabled pack-wide.
+  Replaces the old catch-all regex with an explicit list, so nothing else gets swept up by accident.
+- **Sky retune** — Cirrus cloud decks moved to y 182 / 272 / 336, lower and upper layers switched to
+  `fancy`, and the fog tint now leans on Atmospherics instead of Cirrus's horizon gradient.
 
-- Glaiden's Audio + Glaiden's Audio Aeronautics compat
-- Vista + Vista: All The Cassettes
-- Create Aeronautics: Throwable Rope Connector
-- VS / Sable Hose Connectors
+## 🐛 Fixes
 
-## 🔄 Updated (51)
+- **Totems of Undying work again** — the death-ragdoll flow intercepted the fatal blow before vanilla
+  ever ran its totem check, so totems silently did nothing. A totem now keeps you on your feet at
+  1 heart instead of putting you down.
+- **Absorption hearts are counted** — golden-apple hearts were ignored when deciding a hit was fatal,
+  downing (and wasting a totem on) players who would have survived.
+- **Revive hints** — nearby players now get an action-bar prompt naming who is down, and how to get
+  them up with a splash of Healing.
+- **Fire charges hit airships** — Amendments' fire charge flew straight through Sable ship hulls.
+- **The sky no longer turns white in the rain** — Atmospherics' rain/thunder colours are absolute
+  replacements, not tints, and shipped as pure white. Replaced with proper overcast greys.
+- **Rain falls below the clouds again** — Particle Rain's spawn height limit was silently reset to the
+  mod's default by a config-version migration, so rain spawned above the cloud decks. Re-pinned to the
+  lower deck at y 182, which matters constantly here since airships cruise above cloud level.
+- **Savanna pig texture fixed** — Fresh Animations ships the warm pig at the wrong size for 1.21.1,
+  scrambling it. A small Paxi resource pack now supplies a correctly-sized texture.
 
-Amendments · Async Logger · AsyncParticles · Azimuth API · BaguetteLib · Balm · Bits and Balance ·
-Burnt Basic · C2ME · Chat Heads · Contraption Lights · Create Aeronautics · Create: Bits 'n' Bobs ·
-Create: Blueprinted · Create: Coasters Simulated · Create: Compatible Storage · Create: Copycats+ ·
-Create: Dragons Plus · Create: Enchantment Industry · Create: Pipes'n physics · Create Stuff 'N
-Additions · Create - Xaero's map · CreativeCore · FancyMenu · Farmer's Delight · ImmediatelyFast ·
-Immersive Overlays · Inventory Essentials · Ixeris · Jade Sable Compat · JEI · KubeJS · KubeJS
-Diesel Generators · Lithostitched · Lootr · ModernFix · Moonlight Lib · Particle Rain · Reese's
-Sodium Options · Sable · Sky Archipelago · Sodium · Sodium Extra · Sophisticated Backpacks ·
-Sophisticated Core · SuperMartijn642's Core Lib · Trash Cans · Tree Physics · Wakes Reforged ·
-Xaero's World Map · YUNG's API
+## 🔄 Updated Mods
 
-Notable:
+_None_
 
-- **Sodium `0.8.12-alpha.4` → `0.8.13`** — first stable 0.8 release for 1.21.1. Sodium Extra `0.9.3`
-  and Reese's Sodium Options `2.2.3` move with it. All three come off their version pins; the render
-  stack is no longer held on alphas.
-- **Sable `2.0.3` → `2.0.5`**, **Create Aeronautics `1.3.0` → `1.3.2`**
-- **Contraption Lights** and **Lithostitched** move to beta channels
+## ❌ Removed Mods
 
-## 📖 Quest Book
-
-FTB Quests ships pre-built as a config override — 4 chapters, 188 quests. Open it from the sidebar
-button in your inventory.
-
-| Chapter | Quests |
-|---|---|
-| Welcome | 4 |
-| Create Aeronautics | 47 |
-| Create | 112 |
-| Combustion | 25 |
-
-**Combustion** is written for this pack: Diesel Generators' Pumpjack, Oil Scanner and Distillation
-recipes are removed (no bedrock under a floating island), replaced by a Plant Oil / Ethanol /
-Black Dye Fluid → Biodiesel → Diesel chain. Quest icons ship as a Paxi resource pack.
-
-## ⌨️ Keybinds
-
-Keybind defaults now ship in **`config/defaultoptions/keybindings.txt`**, not `options.txt`.
-DefaultOptions reads keys only from that file — the 197 `key_*` lines the pack shipped in
-`options.txt` since 1.0.0 never applied. This fixes `M`, Iris reload, and Fancy Toasts reverting to
-colliding binds on fresh installs.
-
-## 🌬️ Nether Air Pressure
-
-Paxi global datapack sets Sable `base_pressure` to **1.35** in the Nether — lift there now behaves
-as if flying 75 blocks lower. Overworld deliberately untouched.
-
-> Server operators: the datapack must exist on the server too, or Nether lift desyncs.
-
-## ☁️ Sky Stack
-
-Cirrus replaces vanilla clouds/sky. Cloud decks at y 217 / 281 / 345; Particle Rain's
-`spawnHeightLimit` is pinned to `217` to match the lower deck.
-
-## 🖥️ Server
-
-- MOTD version token auto-bumped by the release script
-- No proxy — direct connect
-
-> **Server operators:** mrpack4server never prunes mods that leave the pack. Wipe the server's
-> `mods/` folder before deploying, or the removed jars linger and kick clients with
-> "Incompatible client".
+_None_
