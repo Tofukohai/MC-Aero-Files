@@ -1,0 +1,173 @@
+Note: Release Candidate 1. This is likely to become 1.0.0. Changes are against 0.9.9e.
+
+## Server and world
+
+- New world required: Sky Archipelago changelog says 1.3.6 worlds are likely incompatible with 1.4.
+- Xaero maps and waypoints do not carry over.
+- Server operators: wipe mods/ before deploying (mrpack4server does not remove old jars).
+- NeoForge 21.1.248 -> 21.1.265.
+- view-distance 8 -> 10, simulation-distance 10.
+- sync-chunk-writes=false.
+- BlueMap: min-inhabited-time 1 on all three maps.
+
+## Added
+
+- Aeronautics Hot Air Fix 1.1.1 (client)
+- Artifice Create Recipes 0.1.1
+- Clear Void 1.3.1 (client)
+- Cool Rain Reforged 1.0.2
+- Create Aeronautics: Rechiseled Compatibility 1.2.2
+- Create: Connected 1.3.3
+- Cristel Lib 3.1.7
+- Dimension Access Manager 4.0.2
+- Freecam (Fair Play) 2.0.0
+- Fusion (Connected Textures) 1.3.16 (client)
+- Geckolib 4.9.3
+- Geophilic 3.7
+- Geophilic Backport 1.3.3
+- Inventory Tweaks: ReFoxed 1.2.0 (client)
+- Iron's Arms 'n Artifice 1.1.1
+- Iron's Lib 2.3.0
+- Just Player Heads 4.5
+- MezzConfig 0.6.9 (client)
+- Moog's Structure Lib (moogs_structures) 3.4.2
+- MSS - Moog's Soaring Structures 2.2.0
+- MVS - Moog's Voyager Structures 5.1.3
+- No Chat Reports 2.9.1
+- Rechiseled 1.2.6
+- Rechiseled: Create 1.1.1
+- Sable: Cool Rain 1.0.1 (client)
+- Sparse Structures 3.0
+- Supplementaries 4.0.2
+- YUNG's Better Nether Fortresses 3.1.5
+- Diorama 0.4.0 (Aero build, client)
+
+## Removed
+
+- Create - Xaero's map
+- Create: Pipes'n physics
+- Freecam
+- Xaero Train Map
+- Xaero's Minimap
+- Xaero's World Map
+- Copper Age Backport aeropatch (included in Vanilla Backport 1.2)
+- Shaderpacks: Complementary Reimagined, Bliss (Photon is the only supported pack)
+
+## Updated (86)
+
+- Aero Tofu: 1.2.0 -> 1.4.2
+- [EMF] Entity Model Features: 3.2.4 -> 3.3.12
+- [ETF] Entity Texture Features: 7.1 -> 7.2.6
+- Almanac: 1.5.2 -> 1.26.10.3
+- AmbientSounds: 6.3.8 -> 6.3.11
+- Amendments: 2.1.9 -> 2.2.2
+- Async Logger: 2.2.2 -> 2.2.3
+- AsyncParticles: 21.1.4.2 -> 21.1.4.10
+- Azimuth API: 1.4.7 -> 1.4.10
+- BaguetteLib: 2.0.5 -> 2.0.7
+- Balm: 21.0.65 -> 21.0.66
+- Bits and Balance: 2.3 -> 2.4.3
+- Burnt Basic: 1.10.4.2 -> 1.10.5.3
+- Cirrus: 1.3.0 -> 1.4.1
+- Collective: 8.39 -> 8.67
+- Colorwheel: 1.2.9 -> 1.3.0
+- Companion: 6.2.2 -> 6.3.0
+- Concurrent Chunk Management Engine (NeoForge): 0.4.0-alpha.0.120 -> 0.4.0-alpha.0.124
+- Contraption Lights: 1.5.0-beta.3 -> 1.5.5
+- Corpse: 1.1.13 -> 1.1.22
+- Corpse x Curios API Compat: 4.0.1 -> 4.2.0
+- CraterLib: 3.1.2 -> 3.1.3
+- Create Encased: 1.9.0-ht3 -> 1.10.0-fix1
+- Create Railways Navigator: 0.9.1-C6 -> 0.10.0-C6
+- Create Slice & Dice: 4.3.3 -> 4.3.4
+- Create Stuff 'N Additions x Sable & Aeronautics Compat: 1.0.3 -> 1.0.4
+- Create: Avionics ComputerCraft for Aeronautics: 0.5.2 -> 0.6.0
+- Create: Bits 'n' Bobs: 2.2.7 -> 2.3.5
+- Create: Blueprinted: 2.2.3 -> 2.2.5
+- Create: Compatible Storage: 2.13.0 -> 2.14.0
+- Create: Copycats+: 3.0.8 -> 3.0.9
+- Create: Deployer API: 0.1.2 -> 0.1.3
+- Create: Dragons Plus: 1.11.7b -> 1.11.9
+- Create: Enchantment Industry: 2.5.3b -> 2.5.4b
+- Create: Extra Gauges: 2.1.2 -> 2.1.3
+- Create: Liquid Fuel: 2.1.1 -> 3.0.0
+- Create: Sound of Steam: 0.8.2 -> 0.9.2.1
+- CreateBetterFps: 1.1.4 -> 1.1.5
+- CreativeCore: 2.13.44 -> 2.13.51
+- DragonLib: 3.0.28 -> 3.0.29
+- Entity Culling: 1.10.5 -> 1.11.3
+- Explosive Enhancement: Reforged: 1.1.2 -> 1.2.0
+- Exposure: 1.9.18 -> 1.9.19
+- Extreme sound muffler: 3.56 -> 3.57
+- FancyMenu: 3.9.12 -> 3.9.14
+- Flerovium: 1.1.2 -> 1.2.0
+- FTB Library (NeoForge): 2101.1.35 -> 2101.1.38
+- FTB Quests (NeoForge): 2101.1.34 -> 2101.1.37
+- Fzzy Config: 0.7.6 -> 0.7.7+fix1
+- ImmediatelyFast: 1.6.13 -> 1.6.15
+- Immersive Overlays: 1.8.3 -> 1.8.6
+- Inventory Essentials: 21.1.18 -> 21.1.20
+- Ixeris: 4.6.5 -> 4.6.10
+- Jade Addons (Neo/Forge): 6.1.0 -> 6.1.2
+- Just Enough Items (JEI): 19.50.0.414 -> 19.70.0.461
+- KubeJS: 2101.7.2-build.374 -> 2101.7.2-build.377
+- KubeJS Diesel Generators: 1.2.4 -> 1.2.8
+- LambDynamicLights - Dynamic Lights: 4.8.10 -> 4.8.11
+- Let Me Despawn: 1.5.0 -> 1.26.10.2
+- Lithostitched: 1.8.0+beta4 -> 1.8.1
+- Lootr: 1.11.38.124 -> 1.11.38.127
+- MidnightLib: 1.9.3 -> 1.10.0
+- MmmMmmMmmMmm: 2.1.0 -> 2.1.2
+- ModernFix: 5.27.23 -> 5.27.27
+- Moonlight Lib: 3.5.2 -> 3.7.2
+- More Culling: 1.0.9 -> 1.0.10
+- My Nether's Delight: 1.10.4 -> 1.10.4.1
+- Particle Rain: 4.0.0-beta.11 -> 4.0.2
+- Platform: 1.3.3 -> 1.4.2
+- Polymorph: 1.1.0 -> 1.2.0
+- Puzzles Lib: 21.1.52 -> 21.1.66
+- Quick Right-Click: 1.9 -> 3.0
+- Reese's Sodium Options: 2.2.3 -> 2.2.4
+- Sable: 2.0.5 -> 2.0.6
+- Separate Sable Render Distance (Aeronautics Addon): 1.8.5 -> 1.8.7
+- Simple Voice Chat: 2.6.22 -> 2.6.26
+- Sky Archipelago: 1.3.6 -> 1.4
+- Sodium Extra: 0.9.3 -> 0.9.5
+- Sophisticated Backpacks: 3.25.78.2107 -> 3.26.17.2232
+- Sophisticated Core: 1.4.90.2299 -> 1.5.19.2434
+- Spice of Life Onion: 1.5.6 -> 1.5.7
+- Strut Your Stuff: 1.3.0 -> 1.3.1
+- SuperMartijn642's Core Lib: 1.1.24 -> 1.1.25
+- Trash Cans: 1.1.0 -> 1.1.2
+- Vanilla Backport: 1.1.7.10 -> 1.2.2
+- YUNG's API: 5.1.8 -> 5.1.9
+
+## Changed
+
+- World preset: aero is the only shipped preset and the default. Rivers and lakes on, island Y -32 to 120, titan islands radius 160-256 at 1 %, oceanEnabled=false.
+- Datapack aero_smaller_oceans: continentalness +0.4.
+- Sparse Structures: spread factor 2, Moog's Voyager clutter sets off, Ancient Cities 0.75, Supplementaries road signs off.
+- Simulated End Sea start_y -64 -> -100.
+- Carry On: entity whitelist of animals only; no blocks, hostile mobs, players or baby bypass.
+- Freecam (Fair Play) replaces Freecam. Server policy off: noclip, interaction, freeze player, fullbright, unloaded chunks, voice camera.
+- skipMultiplayerWarning:true.
+- Datapack aero_no_bats: bats removed from biome spawns; Exposure Wildlife Archivist no longer needs a bat.
+- Datapack aero_no_enderman_grief: enderman_holdable emptied.
+- Locator Bar off.
+- Default keys: Iron's reload R, gun modifiers G, Shuffle Z, voice chat group K, Inventory Tweaks sort middle mouse. Xaero keys removed.
+- Existing players keep their own binds: rebind Shuffle (R) and voice chat group (G) by hand.
+- Item Obliterator: added Ender Linker, Supplementaries Wrench, Breaching Shell modifier, Platinum Fluid Vessel.
+- KubeJS: CDG hammering recipes removed, web server off.
+- Quests: new chapter The Nexus (14 quests), reward tables named, Platinum Fittings removed, Combustion hub unblocked.
+- Menu: FancyMenu template leftovers removed, music WAV -> OGG, art downscaled, window title Aero Tofu, Sable Beyond title button hidden, Help and Report Bug buttons open aeroworks.tofu235.dev/contact, Website button opens aeroworks.tofu235.dev.
+- Shaders: Colorwheel-patched Photon selected by default, shaders stay off.
+
+## Aero Tofu 1.2.0 -> 1.4.2
+
+- The Murk: fog sea below the islands (y -24); works under Photon, Complementary and I Like Vanilla, off under Bliss-style packs.
+- Players below the Murk, sneaking or invisible are hidden from maps and BlueMap.
+- Corpses of deaths on a ship stay on the ship.
+- Void deaths: body floats on the End Sea; corpse and waypoint surface at the Murk.
+- Bulk Fermenter reload fix (CDG #392).
+- Perf mixins: Coasters ship scan, Burnt fire-tag memo, Threaded Trains inline tick with no trains, Emojiful text check.
+- Dev: /aerotofu scan <structure> [radius] [centerX centerZ], status, cancel (permission 3); CSV in <world>/aerotofu-scan/.
