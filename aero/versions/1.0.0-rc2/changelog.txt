@@ -1,0 +1,43 @@
+Note: Release Candidate 2. This is likely to become 1.0.0. Changes are against 1.0.0-rc1.
+
+## Updating
+
+- Client and server need the same Aero Tofu build (1.4.8).
+- Updating resets shaders and video settings to the pack's values. Keybinds, worlds and map waypoints are kept.
+- Server operators: wipe mods/ before deploying. No new world required.
+
+## Added
+
+- New Tab list with player, death and record pages. Hold Tab and scroll to change page.
+- Saved skins, used when Mojang's session server fails.
+- Death apparition for dying to bees, drowning or the world border.
+- Discord: /stats, /leaderboard and an optional weekly recap.
+- BlueMap: rail lines, stations, trains and the Murk.
+
+## Removed
+
+- Create BlueMap (replaced by the Aero Tofu rail script)
+
+## Updated
+
+- Aero Tofu 1.4.2 -> 1.4.8
+- Diorama (new build)
+
+## Changed
+
+- Discord links in game chat show a short clickable label.
+- Server list is only copied on first install, so added servers are kept.
+- Diorama: new settings tab with live previews.
+- BlueMap: restyled to match the website.
+
+## Fixed
+
+- Players could not join a dedicated server because of Inventory Tweaks: ReFoxed.
+- Giving up in the Death Ragdoll could cause endless dying.
+- Players below the Murk were not hidden on BlueMap.
+- Schematic Table screen disappearing under shaders.
+
+## Known issues
+
+- Under shaders, the Schematic Table 3D preview stays blank for some schematics.
+- A player seen for the first time can still get a default skin while Mojang's session server is failing.
